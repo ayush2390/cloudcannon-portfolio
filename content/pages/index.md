@@ -37,12 +37,12 @@ content_blocks:
       text: Click here
     reversed: false
   - _bookshop_name: global/header
-    title: 'Sendit '
-    title_suffix: Features
+    title: About
+    title_suffix: ' me'
     remove_top_padding: true
     description: >-
-      Our platform offers the most advanced features including automated email
-      content creation, dynamic personalization, and customer segmentation.
+      Web Developer \| JavaScript Enthusiast \| React and Next Lover \| Content
+      Creator \| Community Manager \| Love Travelling&nbsp;
   - _bookshop_name: global/feature
     image: /images/feature/feature-card-two.png
     image_alt: Visitor chart
