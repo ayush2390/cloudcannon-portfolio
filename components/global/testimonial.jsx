@@ -1,43 +1,87 @@
-
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from "markdown-it";
 const md = new MarkdownIt({ html: true });
 
 export default function GlobalTestimonial({ block, dataBinding }) {
-    return (
-        <section className="testimonial" data-cms-bind={dataBinding}>
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-8 mx-auto text-center mb-5">
-                        <div className="testimonial-content">
-                            <h2>{block.title} <span> {block.title_suffix}</span></h2>
-                            <div dangerouslySetInnerHTML={{ __html: md.render(block.description) }}/>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    {block.slider.map((slide, i) => (
-                        <div className="col-lg-4 col-md-6 mb-5" key={i}>
-                            <div className="testimonial-item">
-                                <div className="testimonial-item-person">
-                                    <div className="thumb">
-                                        <img
-                                            src={slide.image}
-                                            alt="logo"
-                                            className={slide.image_alt}
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <h3>{slide.author}</h3>
-                                        <p>{slide.designation}</p>
-                                    </div>
-                                </div>
-                                <p>{slide.message}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+  let content = "";
+
+  const projImg = {
+    width: "100%",
+    height: " auto",
+    borderRadius: "30px",
+  };
+  const projImgbx = {
+    position: "relative",
+    borderRadius: "30px",
+    // overflow: "hidden",
+    marginBottom: "24px",
+  };
+
+  const projTxtx = {
+    position: "fixed",
+    textAlign: "center",
+    // backgroundColor: "red",
+    top: "65%",
+    left: "50%",
+    // transform: "translate(-50%, -50%)",
+    transition: "0.5s ease-in-out",
+    opacity: "1",
+    width: "100%",
+  };
+
+  const projH4 = {
+    // fontSize: "30px",
+    // fontWeight: "700",
+    // letterSpacing: "0.8px",
+    // lineHeight: "1.1em",
+    paddingTop: "20px",
+    color: "black",
+    textAlign: "center",
+    // backgroundColor: "red",
+  };
+
+  const projH2 = {
+    fontSize: "45px",
+    fontWeight: "700",
+    textAlign: "center",
+  };
+
+  const project = {
+    padding: "80px 0",
+    position: "relative",
+  };
+
+  const projectDiv = {
+    display: "grid",
+    gridTemplateColumns: " 600px 600px",
+    columnGap: "80px",
+    rowGap: "80px",
+    gridTemplateRows: "300px 300px",
+    paddingLeft: "100px",
+    width: "100%",
+  };
+
+  if (block.reversed) {
+    content = (
+      <>
+        {block.slider.map((project) => (
+          <>
+            <div style={projImgbx} key={project.key}>
+              <a href={project.link}>
+                <img src={project.url} style={projImg} />
+                <h4 style={projH4}>{project.title}</h4>
+              </a>
             </div>
-        </section>
+          </>
+        ))}
+      </>
     );
+  } else {
+    content = <></>;
+  }
+  return (
+    <section style={project} id="projects">
+      <h2 style={projH2}>{block.title}</h2>
+      <div style={projectDiv}>{content}</div>
+    </section>
+  );
 }
