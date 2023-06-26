@@ -2,8 +2,8 @@ import Link from "next/link";
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt({ html: true });
 
-export default function FeatureHero({ block, dataBinding }) {
-  console.log(block);
+export default function FeatureHero() {
+
   return (
     <section className="feature-hero" data-cms-bind={dataBinding}>
       {/* <div className="container">
