@@ -55,20 +55,28 @@ content_blocks:
     slider:
       - src: /images/feature/react.png
         name: React
+        key: 1
       - src: /images/feature/redux.png
         name: Redux
+        key: 2
       - src: /images/feature/html.png
         name: HTML
+        key: 3
       - src: /images/feature/js.png
         name: JS
+        key: 4
       - src: /images/feature/css.png
         name: CSS
+        key: 5
       - src: /images/feature/next.png
         name: Next
+        key: 6
       - src: /images/feature/github-logo.png
         name: GitHub
+        key: 7
       - src: /images/feature/firebase.png
         name: Firebase
+        key: 8
     reversed: true
   - _bookshop_name: global/testimonial
     title: Projects
