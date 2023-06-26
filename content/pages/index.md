@@ -86,21 +86,27 @@ content_blocks:
       - link: "https://github.com/ayush2390/Ecommerce-Dashboard"
         url: "./images/testimonial/dashboard.png"
         title: Dashboard
+        key: 1
       - link: "https://github.com/ayush2390/Disney-Plus-Clone"
         url: "./images/testimonial/disney-plus-clone.png"
         title: Disney Plus Clone
+        key: 2
       - link: "https://github.com/ayush2390/Exercise-App"
         url: "./images/testimonial/fitness-app.png"
         title: Exercise App
+        key: 3
       - link: "https://github.com/ayush2390/Crypto-App"
         url: "./images/testimonial/crypto.png"
         title: Crypto App
+        key: 4
       - link: "https://github.com/ayush2390/linkedin-clone"
         url: "./images/testimonial/linkedin-clone.png"
         title: Linkedin Clone
+        key: 5
       - link: "https://github.com/ayush2390/linkedin-clone"
         url: "./images/testimonial/youtube-clone.png"
         title: YouTube Clone
+        key: 6
     reversed: true
   - _bookshop_name: global/testimonial
     title: Blogs
@@ -110,20 +116,26 @@ content_blocks:
       - link: "https://www.lambdatest.com/blog/css-display-property/"
         url: "./images/testimonial/CSS Display.png"
         title: CSS Display Property
+        key: 1
       - link: "https://www.lambdatest.com/blog/css-hover-effects/"
         url: "./images/testimonial/CSS Grid.png"
         title: An Interactive Guide To CSS Hover Effects
+        key: 2
       - link: "https://www.lambdatest.com/blog/css-header/"
         url: "./images/testimonial/CSS Header.png"
         title: A Complete Guide To CSS Headers
+        key: 3
       - link: "https://www.showwcase.com/show/24404/become-a-frontend-developer-in-2023"
         url: "./images/testimonial/Frontend.jpg"
         title: Become a Frontend Developer in 2023
+        key: 4
       - link: "https://www.showwcase.com/show/34825/important-javascript-concepts-for-react"
         url: "./images/testimonial/JS needed.png"
         title: Important JavaScript Concepts for React
+        key: 5
       - link: "https://www.zipy.ai/blog/comparing-react-testing-libraries"
         url: "./images/testimonial/React testing.jpg"
         title: Comparing React Testing Libraries
+        key: 6
     reversed: true
 ---
