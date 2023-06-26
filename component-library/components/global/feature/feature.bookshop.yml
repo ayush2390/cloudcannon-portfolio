@@ -16,6 +16,9 @@ blueprint:
   button:
     link: /signup
     text: Try This Free
+  slider:
+    - src: /images/feature/react.png
+      name: React
   reversed: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
