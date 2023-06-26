@@ -57,7 +57,7 @@ export default function GlobalFeature({ block, dataBinding }) {
               style={skillSlider}
             >
               {block.slider.map((image) => (
-                <div>
+                <div key={image.key}>
                   <img src={image.src} alt={image.name} style={slidingImages} />
                   <p> {image.name}</p>
                 </div>
